@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Navbar from "./Components/Navbar";
 import VideoCard from "./Components/VideoCard";
 
-const Container = styled.div`
+const MainContainer = styled.div`
   display: flex;
 `;
 
@@ -12,12 +12,13 @@ const Wrapper = styled.div``;
 
 const Main = styled.div`
   flex: 7;
+  background-color: #181818;
 `;
 
 function App() {
   return (
     <>
-      <Container>
+      <MainContainer>
         <Menu />
         <Main>
           <Navbar />
@@ -25,7 +26,7 @@ function App() {
             <VideoCard />
           </Wrapper>
         </Main>
-      </Container>
+      </MainContainer>
     </>
   );
 }

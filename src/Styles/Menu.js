@@ -1,13 +1,14 @@
 
 import styled from "styled-components";
 
-
 export const Container = styled.div`
   flex: 1;
   background-color: #202020;
-  height: 100vh;
+  height: auto;
   color: white;
   font-size: 14px;
+  position: sticky;
+  top: 0;
 `;
 
 export const Wrapper = styled.div`
