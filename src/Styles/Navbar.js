@@ -32,7 +32,6 @@ border: 1px solid #ccc;
 export const NavInput = styled.input`
 background-color: transparent;
 border: none;
-
 `
 
 export const LoginButton = styled.button`

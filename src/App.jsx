@@ -5,6 +5,9 @@ import Navbar from "./Components/Navbar";
 import VideoCard from "./Components/VideoCard";
 import { Dark_Mode, Light_Mode } from "./Themes/theme";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import VideoDetails from "./Pages/VideoDetails";
 
 const MainContainer = styled.div`
   display: flex;
@@ -28,7 +31,10 @@ function App() {
           <Main>
             <Navbar />
             <Wrapper>
-              <VideoCard />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="video/:id" element={<VideoDetails />} />
+              </Routes>
             </Wrapper>
           </Main>
         </MainContainer>
