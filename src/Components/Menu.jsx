@@ -14,6 +14,7 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 import {
@@ -30,6 +31,12 @@ import {
 import { Link } from "react-router-dom";
 
 const Menu = ({ dark, setDark }) => {
+
+  const modeIcon = dark ? <DarkModeOutlinedIcon/>: <LightModeOutlinedIcon/>
+;
+
+
+
   return (
     <>
       <Container>
@@ -108,8 +115,9 @@ const Menu = ({ dark, setDark }) => {
             Help
           </NavItem>
           <NavItem onClick={() => setDark(!dark)}>
-            <DarkModeOutlinedIcon />
-            Theme/Ligh Mode
+          {/* <DarkModeOutlinedIcon /> */}
+          {modeIcon}
+            {dark ? " Light" : "Dark"} Mode
           </NavItem>
         </Wrapper>
       </Container>
