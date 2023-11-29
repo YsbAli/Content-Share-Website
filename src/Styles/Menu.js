@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   flex: 1;
-  background-color: #202020;
+  background-color: ${({ theme }) => theme.bg};
   height: auto;
-  color: white;
+  color: ${({ theme }) => theme.text};
   font-size: 14px;
   position: sticky;
   top: 0;
@@ -38,7 +38,7 @@ export const NavItem = styled.div`
 
 export const HrBorder = styled.hr`
   margin: 15px 0px;
-  border: 0.5px solid #373737;
+  border: 0.5px solid ${({ theme }) => theme.soft};
 `;
 
 export const LoginDiv = styled.div`
@@ -58,3 +58,11 @@ export const LoginButton = styled.button`
   align-items: center;
   gap: 5px;
 `;
+
+
+export const Title = styled.h2`
+font-size: 14px;
+font-weight: 500;
+color: #aaaaaa;
+margin-bottom: 20px;
+`

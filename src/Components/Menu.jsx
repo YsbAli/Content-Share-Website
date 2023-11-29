@@ -25,16 +25,17 @@ import {
   HrBorder,
   LoginDiv,
   LoginButton,
+  Title,
 } from "../Styles/Menu.js";
 
-const Menu = () => {
+const Menu = ({ dark, setDark }) => {
   return (
     <>
       <Container>
         <Wrapper>
           <Logo>
             <Img src={YtLogo} />
-            Social Tube
+            Video Share
           </Logo>
           <NavItem>
             <HomeIcon />
@@ -65,6 +66,7 @@ const Menu = () => {
             </LoginButton>
           </LoginDiv>
           <HrBorder />
+          <Title>Best of Social Tube</Title>
           <NavItem>
             <LibraryMusicIcon />
             Music
@@ -102,7 +104,7 @@ const Menu = () => {
             <HelpOutlineOutlinedIcon />
             Help
           </NavItem>
-          <NavItem>
+          <NavItem onClick={() => setDark(!dark)}>
             <DarkModeOutlinedIcon />
             Theme/Ligh Mode
           </NavItem>
