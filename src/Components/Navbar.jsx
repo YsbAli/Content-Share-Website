@@ -1,10 +1,26 @@
-import React from "react";
+import {
+  NavContainer,
+  NavSearch,
+  NavWrapper,
+  NavInput,
+  LoginButton,
+} from "../Styles/Navbar";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 function Navbar() {
   return (
-    <div>
-      <h1>Navbar</h1>
-    </div>
+    <NavContainer>
+      <NavWrapper>
+        <NavSearch>
+          <NavInput placeholder="Search..." />
+          <SearchOutlinedIcon />
+        </NavSearch>
+        <LoginButton>
+          <AccountCircleOutlinedIcon /> SIGN IN
+        </LoginButton>
+      </NavWrapper>
+    </NavContainer>
   );
 }
 
