@@ -20,7 +20,7 @@ position: absolute;
 left: 0px;
 right: 0px;
 margin: auto;
-width: 43%;
+width: 40%;
 border-radius: 3px;
 display: flex;
 align-items: center;

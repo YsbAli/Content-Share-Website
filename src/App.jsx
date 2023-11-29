@@ -2,7 +2,6 @@ import styled, { ThemeProvider } from "styled-components";
 
 import Menu from "./Components/Menu";
 import Navbar from "./Components/Navbar";
-import VideoCard from "./Components/VideoCard";
 import { Dark_Mode, Light_Mode } from "./Themes/theme";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
@@ -13,7 +12,9 @@ const MainContainer = styled.div`
   display: flex;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  padding: 22px 90px;
+`;
 
 const Main = styled.div`
   flex: 7;
@@ -33,7 +34,7 @@ function App() {
             <Wrapper>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="video/:id" element={<VideoDetails />} />
+                <Route path="/video/:id" element={<VideoDetails />} />
               </Routes>
             </Wrapper>
           </Main>
