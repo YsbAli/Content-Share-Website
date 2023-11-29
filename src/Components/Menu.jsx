@@ -27,16 +27,19 @@ import {
   LoginButton,
   Title,
 } from "../Styles/Menu.js";
+import { Link } from "react-router-dom";
 
 const Menu = ({ dark, setDark }) => {
   return (
     <>
       <Container>
         <Wrapper>
-          <Logo>
-            <Img src={YtLogo} />
-            Video Share
-          </Logo>
+          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            <Logo>
+              <Img src={YtLogo} />
+              Video Share
+            </Logo>
+          </Link>
           <NavItem>
             <HomeIcon />
             Home
