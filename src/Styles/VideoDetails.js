@@ -63,7 +63,61 @@ border: 0.5px solid ${({ theme }) => theme.soft};
 // `
 
 
+
+
+
+
 export const VideoRecommendation = styled.div`
 flex: 2;
 
 `
+
+
+
+export const ChannelDetails = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const ChannelProfileinfo = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
+export const Image = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+`;
+
+export const ChannelDetailsInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: ${({ theme }) => theme.text};
+`;
+export const ChannelName = styled.span`
+  font-weight: 500;
+`;
+
+export const ChannelCounter = styled.span`
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: ${({ theme }) => theme.textSoft};
+`;
+
+export const ChannelDescription = styled.p`
+  font-size: 14px;
+`;
+
+export const ChannelSubscribe = styled.button`
+  background-color: red;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  height: max-content;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 14px;
+`;
