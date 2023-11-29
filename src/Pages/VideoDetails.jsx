@@ -23,56 +23,8 @@ import {
   ChannelDescription,
   ChannelSubscribe,
 } from "../Styles/VideoDetails";
-import styled from "styled-components";
+
 import MyImage from "../assets/profile.png";
-
-// const ChannelDetails = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-// `;
-
-// const ChannelProfileinfo = styled.div`
-//   display: flex;
-//   gap: 20px;
-// `;
-
-// const Image = styled.img`
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 50%;
-// `;
-
-// const ChannelDetailsInfo = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   color: ${({ theme }) => theme.text};
-// `;
-// const ChannelName = styled.span`
-//   font-weight: 500;
-// `;
-
-// const ChannelCounter = styled.span`
-//   font-size: 12px;
-//   margin-top: 5px;
-//   margin-bottom: 20px;
-//   color: ${({ theme }) => theme.textSoft};
-// `;
-
-// const ChannelDescription = styled.p`
-//   font-size: 14px;
-// `;
-
-// const ChannelSubscribe = styled.button`
-//   background-color: red;
-//   font-weight: 500;
-//   color: white;
-//   border: none;
-//   border-radius: 3px;
-//   height: max-content;
-//   padding: 8px 20px;
-//   cursor: pointer;
-//   font-size: 14px;
-// `;
 
 const VideoDetails = () => {
   return (
