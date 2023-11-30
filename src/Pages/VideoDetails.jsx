@@ -1,5 +1,5 @@
 import AddTaskOutlinedIcon from "@mui/icons-material/AddTaskOutlined";
-import ThumbUpOutLinedIcon from "@mui/icons-material/ThumbUpOutLined";
+import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import ThumbDownOffAltOutlinedIcon from "@mui/icons-material/ThumbDownOffAltOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 
