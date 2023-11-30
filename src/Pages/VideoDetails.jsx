@@ -25,6 +25,7 @@ import {
 } from "../Styles/VideoDetails";
 
 import MyImage from "../assets/profile.png";
+import AllComments from "../Components/AllComments";
 
 const VideoDetails = () => {
   return (
@@ -79,6 +80,9 @@ const VideoDetails = () => {
           </ChannelProfileinfo>
           <ChannelSubscribe>Subscribe</ChannelSubscribe>
         </ChannelDetails>
+        <Hr />
+        {/* Commnet Section here */}
+        <AllComments />
       </ContentInfo>
       <VideoRecommendation>Recommentdation</VideoRecommendation>
     </Container>
