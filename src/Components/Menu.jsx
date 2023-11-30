@@ -31,12 +31,7 @@ import {
 import { Link } from "react-router-dom";
 
 const Menu = ({ dark, setDark }) => {
-
-  const modeIcon = dark ? <DarkModeOutlinedIcon/>: <LightModeOutlinedIcon/>
-;
-
-
-
+  const modeIcon = dark ? <DarkModeOutlinedIcon /> : <LightModeOutlinedIcon />;
   return (
     <>
       <Container>
@@ -44,7 +39,7 @@ const Menu = ({ dark, setDark }) => {
           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
             <Logo>
               <Img src={YtLogo} />
-              Video Share
+              Social Tube
             </Logo>
           </Link>
           <NavItem>
@@ -71,9 +66,11 @@ const Menu = ({ dark, setDark }) => {
           <HrBorder />
           <LoginDiv>
             Sign in to Like videos, Comment, and Subscribe.
-            <LoginButton>
-              <AccountCircleOutlinedIcon /> SIGN IN
-            </LoginButton>
+            <Link to="/signin" style={{ textDecoration: "none" }}>
+              <LoginButton>
+                <AccountCircleOutlinedIcon /> SIGN IN
+              </LoginButton>
+            </Link>
           </LoginDiv>
           <HrBorder />
           <Title>Best of Social Tube</Title>
@@ -115,8 +112,8 @@ const Menu = ({ dark, setDark }) => {
             Help
           </NavItem>
           <NavItem onClick={() => setDark(!dark)}>
-          {/* <DarkModeOutlinedIcon /> */}
-          {modeIcon}
+            {/* <DarkModeOutlinedIcon /> */}
+            {modeIcon}
             {dark ? " Light" : "Dark"} Mode
           </NavItem>
         </Wrapper>

@@ -34,6 +34,11 @@ export const NavItem = styled.div`
   gap: 20px;
   padding: 8px 0px;
   cursor: pointer;
+
+  &:hover{
+    background-color: ${({ theme }) => theme.soft};
+    border-radius: 4px;
+  }
 `;
 
 export const HrBorder = styled.hr`
