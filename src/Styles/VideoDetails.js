@@ -49,24 +49,6 @@ margin: 15px 0px;
 border: 0.5px solid ${({ theme }) => theme.soft};
 `
 
-// export const channelDetails = styled.div`
-// display: flex;
-// justify-content: space-between;
-// `
-
-// export const channelInfo = styled.div`
-
-
-// `
-
-// export const channelSubscribe = styled.button`
-
-// `
-
-
-
-
-
 
 export const VideoRecommendation = styled.div`
 flex: 2;

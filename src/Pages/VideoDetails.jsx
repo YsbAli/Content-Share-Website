@@ -85,6 +85,7 @@ const VideoDetails = () => {
         {/* Commnet Section here */}
         <AllComments />
       </ContentInfo>
+      {/* Recomendation Section */}
       <VideoRecommendation>
         <VideoCard type="sm" />
         <VideoCard type="sm" />
