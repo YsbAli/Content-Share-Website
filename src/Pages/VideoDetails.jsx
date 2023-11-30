@@ -26,6 +26,7 @@ import {
 
 import MyImage from "../assets/profile.png";
 import AllComments from "../Components/AllComments";
+import VideoCard from "../Components/VideoCard";
 
 const VideoDetails = () => {
   return (
@@ -84,7 +85,18 @@ const VideoDetails = () => {
         {/* Commnet Section here */}
         <AllComments />
       </ContentInfo>
-      <VideoRecommendation>Recommentdation</VideoRecommendation>
+      <VideoRecommendation>
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+        <VideoCard type="sm" />
+      </VideoRecommendation>
     </Container>
   );
 };

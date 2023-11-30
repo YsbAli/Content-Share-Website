@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 display: flex;
-gap: 24px;
+gap: 30px;
 color : white;
 `
 
@@ -11,6 +11,7 @@ export const ContentInfo = styled.div`
 flex: 5;
 `
 export const VideoWrapper = styled.div`
+
 `
 
 export const ContentTitle = styled.div`
