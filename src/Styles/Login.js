@@ -46,7 +46,7 @@ color: ${({ theme }) => theme.textSoft};
 `
 
 export const Span = styled.span`
-font-size: 10px;
+font-size: 13px;
 `
 
 export const More = styled.div`
